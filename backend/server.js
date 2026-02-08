@@ -21,7 +21,8 @@ const port = process.env.PORT || 3000;
 
 
 const allowedOrigins = [
-  "http://localhost:5173", 
+  "https://personal-site-iota-kohl.vercel.app",
+  "https://personal-sites-kappa.vercel.app" 
 ];
 
 app.use(cors({
