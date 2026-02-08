@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './UploadChoicePage.css';
+import './Uploadchoicepage.css';
 import { useNavigate } from "react-router";
 import config from '../config';
 
