@@ -22,7 +22,7 @@ const port = process.env.PORT || 3000;
 
 const allowedOrigins = [
   "https://personal-site-iota-kohl.vercel.app",
-  "https://personal-sites-kappa.vercel.app" 
+  "https://personal-sites-kappa.vercel.app"
 ];
 
 app.use(cors({
@@ -168,7 +168,8 @@ app.post('/readcerts', async (req, res) => {
   const athul_certs = list_of_certs[9] || []
   const hridhya_certs = list_of_certs[10] || []
   const joyal_certs = list_of_certs[11] || []
-  res.json({ success: true, bilal: bilal_certs, britto: britto_certs, abhishek: abhishek_certs, devadath: devadath_certs, akash: akash_certs,adhil:adhil_certs,vaishnav:vaishnav_certs })
+  const ashik_Certs = list_of_certs[12] || []
+  res.json({ success: true, bilal: bilal_certs, britto: britto_certs, abhishek: abhishek_certs, devadath: devadath_certs, akash: akash_certs, adhil: adhil_certs, vaishnav: vaishnav_certs, nidhin: nidhin_certs, karthika: karthika_certs, athul: athul_certs, hridhya: hridhya_certs, joyal: joyal_certs, ashik: ashik_Certs })
 })
 
 app.post('/readprojects', async (req, res) => {
@@ -186,7 +187,13 @@ app.post('/readprojects', async (req, res) => {
   const akash_projects = list_of_projects[4] || []
   const adhil_projects = list_of_projects[5] || []
   const vaishnav_projects = list_of_projects[6] || []
-  res.json({ success: true, bilal: bilal_projects, britto: britto_projects, abhishek: abhishek_projects, devadath: devadath_projects, akash: akash_projects,adhil:adhil_projects,vaishnav:vaishnav_projects })
+  const nidhin_projects = list_of_projects[7] || []
+  const karthika_projects = list_of_projects[8] || []
+  const athul_projects = list_of_projects[9] || []
+  const hridhya_projects = list_of_projects[10] || []
+  const joyal_projects = list_of_projects[11] || []
+  const ashik_projects = list_of_projects[12] || []
+  res.json({ success: true, bilal: bilal_projects, britto: britto_projects, abhishek: abhishek_projects, devadath: devadath_projects, akash: akash_projects, adhil: adhil_projects, vaishnav: vaishnav_projects,nidhin: nidhin_projects, karthika: karthika_projects, athul: athul_projects, hridhya: hridhya_projects, joyal: joyal_projects, ashik: ashik_projects  })
 })
 
 

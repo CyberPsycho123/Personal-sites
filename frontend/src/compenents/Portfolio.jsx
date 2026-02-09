@@ -5,8 +5,6 @@ import { useLocation } from 'react-router-dom';
 const Portfolio = ({ certificates, projects }) => {
   const { pathname } = useLocation()
   const person_name = pathname.replace("/", "").toUpperCase();
-  console.log(person_name)
-  console.log(person_name=="BILAL")
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [name, setname] = useState("porfolio")
   const [mail, setmail] = useState("")
@@ -21,7 +19,6 @@ const Portfolio = ({ certificates, projects }) => {
   const [roledesc, setdesc] = useState("")
 
 
-  const person_names = ["BRITTO", "BILAL", "ABHISHEK", "DEVADATH", "AKASH", "ADHIL", "VAISHNAV"]
 
   const role_description = [
     { name: 'BRITTO BINOY', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'blue' },
@@ -30,7 +27,13 @@ const Portfolio = ({ certificates, projects }) => {
     { name: 'MS DEVADATHAN', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'green' },
     { name: 'AKASH BOBAN', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'chocolate' },
     { name: 'ADHIL KB', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'brown' },
-    { name: 'VAISHNAV MANOJ', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'orange' }
+    { name: 'VAISHNAV MANOJ', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'orange' },
+    { name: 'NIDHIN T SUNNY', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'orange' },
+    { name: 'KARTHIKA', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'orange' },
+    { name: 'ATHUL KRISHNA', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'orange' },
+    { name: 'HRIDHYA NANDAN', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'orange' },
+    { name: 'JOYAL GEORGE', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'orange' },
+    { name: 'ASHIK BENY', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'orange' },
   ]
 
   useEffect(() => {
@@ -59,6 +62,151 @@ const Portfolio = ({ certificates, projects }) => {
       setlink(role_description[1].linked)
       setresume(role_description[1].resume)
       setcolor(role_description[1].color)
+    }
+
+    else if (person_name == "ABHISHEK") {
+      setname(role_description[2].name)
+      setrole(role_description[2].role)
+      setdesc(role_description[2].roledesc)
+      setlock(role_description[2].location)
+      setno(role_description[2].phone)
+      setmail(role_description[2].email)
+      setabout(role_description[2].about)
+      sethub(role_description[2].github)
+      setlink(role_description[2].linked)
+      setresume(role_description[2].resume)
+      setcolor(role_description[2].color)
+    }
+
+    else if (person_name == "DEVADATH") {
+      setname(role_description[3].name)
+      setrole(role_description[3].role)
+      setdesc(role_description[3].roledesc)
+      setlock(role_description[3].location)
+      setno(role_description[3].phone)
+      setmail(role_description[3].email)
+      setabout(role_description[3].about)
+      sethub(role_description[3].github)
+      setlink(role_description[3].linked)
+      setresume(role_description[3].resume)
+      setcolor(role_description[3].color)
+    }
+    else if (person_name == "AKASH") {
+      setname(role_description[4].name)
+      setrole(role_description[4].role)
+      setdesc(role_description[4].roledesc)
+      setlock(role_description[4].location)
+      setno(role_description[4].phone)
+      setmail(role_description[4].email)
+      setabout(role_description[4].about)
+      sethub(role_description[4].github)
+      setlink(role_description[4].linked)
+      setresume(role_description[4].resume)
+      setcolor(role_description[4].color)
+    }
+    else if (person_name == "ADHIL") {
+      setname(role_description[5].name)
+      setrole(role_description[5].role)
+      setdesc(role_description[5].roledesc)
+      setlock(role_description[5].location)
+      setno(role_description[5].phone)
+      setmail(role_description[5].email)
+      setabout(role_description[5].about)
+      sethub(role_description[5].github)
+      setlink(role_description[5].linked)
+      setresume(role_description[5].resume)
+      setcolor(role_description[5].color)
+    }
+    else if (person_name == "VAISHNAV") {
+      setname(role_description[6].name)
+      setrole(role_description[6].role)
+      setdesc(role_description[6].roledesc)
+      setlock(role_description[6].location)
+      setno(role_description[6].phone)
+      setmail(role_description[6].email)
+      setabout(role_description[6].about)
+      sethub(role_description[6].github)
+      setlink(role_description[6].linked)
+      setresume(role_description[6].resume)
+      setcolor(role_description[6].color)
+    }
+    else if (person_name == "NIDHIN") {
+      setname(role_description[7].name)
+      setrole(role_description[7].role)
+      setdesc(role_description[7].roledesc)
+      setlock(role_description[7].location)
+      setno(role_description[7].phone)
+      setmail(role_description[7].email)
+      setabout(role_description[7].about)
+      sethub(role_description[7].github)
+      setlink(role_description[7].linked)
+      setresume(role_description[7].resume)
+      setcolor(role_description[7].color)
+    }
+    else if (person_name == "KARTHIKA") {
+      setname(role_description[8].name)
+      setrole(role_description[8].role)
+      setdesc(role_description[8].roledesc)
+      setlock(role_description[8].location)
+      setno(role_description[8].phone)
+      setmail(role_description[8].email)
+      setabout(role_description[8].about)
+      sethub(role_description[8].github)
+      setlink(role_description[8].linked)
+      setresume(role_description[8].resume)
+      setcolor(role_description[8].color)
+    }
+    else if (person_name == "ATHUL") {
+      setname(role_description[9].name)
+      setrole(role_description[9].role)
+      setdesc(role_description[9].roledesc)
+      setlock(role_description[9].location)
+      setno(role_description[9].phone)
+      setmail(role_description[9].email)
+      setabout(role_description[9].about)
+      sethub(role_description[9].github)
+      setlink(role_description[9].linked)
+      setresume(role_description[9].resume)
+      setcolor(role_description[9].color)
+    }
+    else if (person_name == "HRIDHYA") {
+      setname(role_description[10].name)
+      setrole(role_description[10].role)
+      setdesc(role_description[10].roledesc)
+      setlock(role_description[10].location)
+      setno(role_description[10].phone)
+      setmail(role_description[10].email)
+      setabout(role_description[10].about)
+      sethub(role_description[10].github)
+      setlink(role_description[10].linked)
+      setresume(role_description[10].resume)
+      setcolor(role_description[10].color)
+    }
+    else if (person_name == "JOYAL") {
+      setname(role_description[11].name)
+      setrole(role_description[11].role)
+      setdesc(role_description[11].roledesc)
+      setlock(role_description[11].location)
+      setno(role_description[11].phone)
+      setmail(role_description[11].email)
+      setabout(role_description[11].about)
+      sethub(role_description[11].github)
+      setlink(role_description[11].linked)
+      setresume(role_description[11].resume)
+      setcolor(role_description[11].color)
+    }
+    else if (person_name == "ASHIK") {
+      setname(role_description[12].name)
+      setrole(role_description[12].role)
+      setdesc(role_description[12].roledesc)
+      setlock(role_description[12].location)
+      setno(role_description[12].phone)
+      setmail(role_description[12].email)
+      setabout(role_description[12].about)
+      sethub(role_description[12].github)
+      setlink(role_description[12].linked)
+      setresume(role_description[12].resume)
+      setcolor(role_description[12].color)
     }
 
 

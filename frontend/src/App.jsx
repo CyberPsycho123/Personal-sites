@@ -22,6 +22,8 @@ function App() {
   const [athulcerts, setathul] = useState([])
   const [hridhyacerts, sethridhya] = useState([])
   const [joyalcerts, setjoyal] = useState([])
+  const [ashikcerts, setashik] = useState([])
+
 
   const [bilalprojects, setbilals] = useState([])
   const [brittoprojects, setbrittos] = useState([])
@@ -35,6 +37,7 @@ function App() {
   const [athulprojects, setathuls] = useState([])
   const [hridhyaprojects, sethridhyas] = useState([])
   const [joyalprojects, setjoyals] = useState([])
+  const [ashikprojects, setashiks] = useState([])
 
   useEffect(() => {
     const interval = setInterval(async () => {
@@ -90,6 +93,7 @@ function App() {
       setathul(response.athul)
       sethridhya(response.hridhya)
       setjoyal(response.joyal)
+      setashik(response.ashik)
     }
   }
 
@@ -113,6 +117,7 @@ function App() {
       setathuls(response.athul)
       sethridhyas(response.hridhya)
       setjoyals(response.joyal)
+      setashiks(response.ashik)
     }
   }
 
@@ -174,6 +179,10 @@ function App() {
     {
       path: '/joyal',
       element: <Layout loading={loading}><Portfolio certificates={joyalcerts} projects={joyalprojects} /></Layout>
+    },
+    {
+      path: '/ashik',
+      element: <Layout loading={loading}><Portfolio certificates={ashikcerts} projects={ashikprojects} /></Layout>
     },
     {
       path: '/display/:name',
