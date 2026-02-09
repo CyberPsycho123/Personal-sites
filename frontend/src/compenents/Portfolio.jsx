@@ -5,6 +5,8 @@ import { useLocation } from 'react-router-dom';
 const Portfolio = ({ certificates, projects }) => {
   const { pathname } = useLocation()
   const person_name = pathname.replace("/", "").toUpperCase();
+  console.log(person_name)
+  console.log(person_name=="BILAL")
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [name, setname] = useState("porfolio")
   const [mail, setmail] = useState("")
