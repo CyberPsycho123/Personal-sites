@@ -149,7 +149,7 @@ app.post("/uploadproject", upload.fields([{ name: "image", maxCount: 1 }]), asyn
 
 
 app.post('/readcerts', async (req, res) => {
-  const emails = ['bilu02493@gmail.com']
+  const emails = ['bilu02493@gmail.com','brittobinoy507@gmail.com','abhishekvinayakumar@gmail.com','msdevadathan.cy24@jecc.ac.in','akashboban10@gmail.com','mrcrnts07@gmail.com','vaishnavjecc@gmail.com','nidhinsunny2006@gmail.com','karthikacvalsan412@gmail.com','athulkrishnamb.cy24@jecc.ac.in','hridhyanandan2006@gmail.com','joyalkodiantharajoseph@gmail.com','ashikbenny.cy24@jecc.ac.in']
   let list_of_certs = []
   for (let i = 0; i < emails.length; i++) {
     const email = emails[i]
@@ -173,7 +173,7 @@ app.post('/readcerts', async (req, res) => {
 })
 
 app.post('/readprojects', async (req, res) => {
-  const emails = ['bilu02493@gmail.com']
+  const emails = ['bilu02493@gmail.com','brittobinoy507@gmail.com','abhishekvinayakumar@gmail.com','msdevadathan.cy24@jecc.ac.in','akashboban10@gmail.com','mrcrnts07@gmail.com','vaishnavjecc@gmail.com','nidhinsunny2006@gmail.com','karthikacvalsan412@gmail.com','athulkrishnamb.cy24@jecc.ac.in','hridhyanandan2006@gmail.com','joyalkodiantharajoseph@gmail.com','ashikbenny.cy24@jecc.ac.in']
   let list_of_projects = []
   for (let i = 0; i < emails.length; i++) {
     const email = emails[i]
