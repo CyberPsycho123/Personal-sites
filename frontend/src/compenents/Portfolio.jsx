@@ -32,7 +32,7 @@ const Portfolio = ({ certificates, projects }) => {
   ]
 
   useEffect(() => {
-    if (person_name == "BILAL") {
+    if (person_name == "BRITTO") {
       setname(role_description[0].name)
       setrole(role_description[0].role)
       setdesc(role_description[0].roledesc)
@@ -44,6 +44,19 @@ const Portfolio = ({ certificates, projects }) => {
       setlink(role_description[0].linked)
       setresume(role_description[0].resume)
       setcolor(role_description[0].color)
+    }
+    else if (person_name == "BILAL") {
+      setname(role_description[1].name)
+      setrole(role_description[1].role)
+      setdesc(role_description[1].roledesc)
+      setlock(role_description[1].location)
+      setno(role_description[1].phone)
+      setmail(role_description[1].email)
+      setabout(role_description[1].about)
+      sethub(role_description[1].github)
+      setlink(role_description[1].linked)
+      setresume(role_description[1].resume)
+      setcolor(role_description[1].color)
     }
 
 
