@@ -21,7 +21,7 @@ const port = process.env.PORT || 3000;
 
 
 const allowedOrigins = [
-  "https://personal-site-v2z7.vercel.app/",
+  "https://personal-site-v2z7.vercel.app",
   "https://personal-sites-kappa.vercel.app",
 ];
 
