@@ -144,6 +144,7 @@ const Portfolio = ({ certificates, projects }) => {
       setcolor(role_description[7].color)
     }
     else if (person_name == "KARTHIKA") {
+      console.log("dhfshfbs")
       setname(role_description[8].name)
       setrole(role_description[8].role)
       setdesc(role_description[8].roledesc)
