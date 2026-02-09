@@ -161,7 +161,9 @@ app.post('/readcerts', async (req, res) => {
   const abhishek_certs = list_of_certs[2] || []
   const devadath_certs = list_of_certs[3] || []
   const akash_certs = list_of_certs[4] || []
-  res.json({ success: true, bilal: bilal_certs, britto: britto_certs, abhishek: abhishek_certs, devadath: devadath_certs, akash: akash_certs })
+  const adhil_certs = list_of_certs[5] || []
+  const vaishnav_certs = list_of_certs[6] || []
+  res.json({ success: true, bilal: bilal_certs, britto: britto_certs, abhishek: abhishek_certs, devadath: devadath_certs, akash: akash_certs,adhil:adhil_certs,vaishnav:vaishnav_certs })
 })
 
 app.post('/readprojects', async (req, res) => {
@@ -177,7 +179,9 @@ app.post('/readprojects', async (req, res) => {
   const abhishek_projects = list_of_projects[2] || []
   const devadath_projects = list_of_projects[3] || []
   const akash_projects = list_of_projects[4] || []
-  res.json({ success: true, bilal: bilal_projects, britto: britto_projects, abhishek: abhishek_projects, devadath: devadath_projects, akash: akash_projects })
+  const adhil_projects = list_of_projects[5] || []
+  const vaishnav_projects = list_of_certs[6] || []
+  res.json({ success: true, bilal: bilal_projects, britto: britto_projects, abhishek: abhishek_projects, devadath: devadath_projects, akash: akash_projects,adhil:adhil_projects,vaishnav:vaishnav_projects })
 })
 
 

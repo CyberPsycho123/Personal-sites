@@ -14,13 +14,18 @@ function App() {
   const [brittocerts, setbritto] = useState([])
   const [abhishekcerts, setabhishek] = useState([])
   const [devadathcerts, setdevadath] = useState([])
-  const [akashcerts,setakash]=useState([])
+  const [akashcerts, setakash] = useState([])
+  const [adhilcerts,setadhil]=useState([])
+  const [vaishnavcerts,setvaishnav]=useState([])
 
-  const [bilalprojects,setbilals]=useState([])
+
+  const [bilalprojects, setbilals] = useState([])
   const [brittoprojects, setbrittos] = useState([])
   const [abhishekprojects, setabhisheks] = useState([])
   const [devadathprojects, setdevadaths] = useState([])
-  const [akashprojects,setakashs]=useState([])
+  const [akashprojects, setakashs] = useState([])
+  const [adhilprojects,setadhils]=useState([])
+  const [vaishnavprojects,setvaishnavs]=useState([])
 
   useEffect(() => {
     const interval = setInterval(async () => {
@@ -69,13 +74,15 @@ function App() {
       setabhishek(response.abhishek)
       setdevadath(response.devadath)
       setakash(response.akash)
+      setadhil(response.adhil)
+      setvaishnav(response.vaishnav)
     }
   }
 
   async function projects() {
     const res = await fetch(`${config.API_BASE_URL}/readprojects`, {
       method: "POST",
-      credentials: 'include',
+      credentials: 'include'
     });
 
     const response = await res.json();
@@ -85,6 +92,8 @@ function App() {
       setabhisheks(response.abhishek)
       setdevadaths(response.devadath)
       setakashs(response.akash)
+      setadhils(response.adhil)
+      setvaishnavs(response.vaishnav)
     }
   }
 
@@ -105,27 +114,35 @@ function App() {
     },
     {
       path: "/Britto",
-      element: <Layout loading={loading}><Portfolio certificates={brittocerts} projects={brittoprojects}/></Layout>
+      element: <Layout loading={loading}><Portfolio certificates={brittocerts} projects={brittoprojects} /></Layout>
     },
     {
       path: "/Abhishek",
-      element: <Layout loading={loading}><Portfolio certificates={abhishekcerts} projects={abhishekprojects}/></Layout>
+      element: <Layout loading={loading}><Portfolio certificates={abhishekcerts} projects={abhishekprojects} /></Layout>
     },
     {
       path: "/Devadath",
-      element: <Layout loading={loading}><Portfolio certificates={devadathcerts} projects={devadathprojects}/></Layout>
+      element: <Layout loading={loading}><Portfolio certificates={devadathcerts} projects={devadathprojects} /></Layout>
     },
     {
-      path:'/Akash',
-      element: <Layout loading={loading}><Portfolio certificates={akashcerts} projects={akashprojects}/></Layout>
+      path: '/Akash',
+      element: <Layout loading={loading}><Portfolio certificates={akashcerts} projects={akashprojects} /></Layout>
     },
     {
-      path:'/display/:name',
-      element:<Layout loading={loading}><PdfDisplay/></Layout>
+      path: '/Adhil',
+      element: <Layout loading={loading}><Portfolio certificates={adhilcerts} projects={adhilprojects} /></Layout>
+    },
+        {
+      path: '/vaishnav',
+      element: <Layout loading={loading}><Portfolio certificates={vaishnavcerts} projects={vaishnavprojects} /></Layout>
     },
     {
-      path:'/*',
-      element:<All/>
+      path: '/display/:name',
+      element: <Layout loading={loading}><PdfDisplay /></Layout>
+    },
+    {
+      path: '/*',
+      element: <All />
     }
   ])
   return (
