@@ -15,17 +15,26 @@ function App() {
   const [abhishekcerts, setabhishek] = useState([])
   const [devadathcerts, setdevadath] = useState([])
   const [akashcerts, setakash] = useState([])
-  const [adhilcerts,setadhil]=useState([])
-  const [vaishnavcerts,setvaishnav]=useState([])
-
+  const [adhilcerts, setadhil] = useState([])
+  const [vaishnavcerts, setvaishnav] = useState([])
+  const [nidhincerts, setnidhin] = useState([])
+  const [karthikacerts, setkarthika] = useState([])
+  const [athulcerts, setathul] = useState([])
+  const [hridhyacerts, sethridhya] = useState([])
+  const [joyalcerts, setjoyal] = useState([])
 
   const [bilalprojects, setbilals] = useState([])
   const [brittoprojects, setbrittos] = useState([])
   const [abhishekprojects, setabhisheks] = useState([])
   const [devadathprojects, setdevadaths] = useState([])
   const [akashprojects, setakashs] = useState([])
-  const [adhilprojects,setadhils]=useState([])
-  const [vaishnavprojects,setvaishnavs]=useState([])
+  const [adhilprojects, setadhils] = useState([])
+  const [vaishnavprojects, setvaishnavs] = useState([])
+  const [nidhinprojects, setnidhins] = useState([])
+  const [karthikaprojects, setkarthikas] = useState([])
+  const [athulprojects, setathuls] = useState([])
+  const [hridhyaprojects, sethridhyas] = useState([])
+  const [joyalprojects, setjoyals] = useState([])
 
   useEffect(() => {
     const interval = setInterval(async () => {
@@ -76,6 +85,11 @@ function App() {
       setakash(response.akash)
       setadhil(response.adhil)
       setvaishnav(response.vaishnav)
+      setnidhin(response.nidhin)
+      setkarthika(response.karthika)
+      setathul(response.athul)
+      sethridhya(response.hridhya)
+      setjoyal(response.joyal)
     }
   }
 
@@ -94,6 +108,11 @@ function App() {
       setakashs(response.akash)
       setadhils(response.adhil)
       setvaishnavs(response.vaishnav)
+      setnidhins(response.nidhin)
+      setkarthikas(response.karthika)
+      setathuls(response.athul)
+      sethridhyas(response.hridhya)
+      setjoyals(response.joyal)
     }
   }
 
@@ -132,9 +151,29 @@ function App() {
       path: '/Adhil',
       element: <Layout loading={loading}><Portfolio certificates={adhilcerts} projects={adhilprojects} /></Layout>
     },
-        {
+    {
       path: '/vaishnav',
       element: <Layout loading={loading}><Portfolio certificates={vaishnavcerts} projects={vaishnavprojects} /></Layout>
+    },
+    {
+      path: '/nidhin',
+      element: <Layout loading={loading}><Portfolio certificates={nidhincerts} projects={nidhinprojects} /></Layout>
+    },
+    {
+      path: '/karthika',
+      element: <Layout loading={loading}><Portfolio certificates={karthikacerts} projects={karthikaprojects} /></Layout>
+    },
+    {
+      path: '/athul',
+      element: <Layout loading={loading}><Portfolio certificates={athulcerts} projects={athulprojects} /></Layout>
+    },
+    {
+      path: '/hridhya',
+      element: <Layout loading={loading}><Portfolio certificates={hridhyacerts} projects={hridhyaprojects} /></Layout>
+    },
+    {
+      path: '/joyal',
+      element: <Layout loading={loading}><Portfolio certificates={joyalcerts} projects={joyalprojects} /></Layout>
     },
     {
       path: '/display/:name',

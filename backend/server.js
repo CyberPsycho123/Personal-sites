@@ -163,6 +163,11 @@ app.post('/readcerts', async (req, res) => {
   const akash_certs = list_of_certs[4] || []
   const adhil_certs = list_of_certs[5] || []
   const vaishnav_certs = list_of_certs[6] || []
+  const nidhin_certs = list_of_certs[7] || []
+  const karthika_certs = list_of_certs[8] || []
+  const athul_certs = list_of_certs[9] || []
+  const hridhya_certs = list_of_certs[10] || []
+  const joyal_certs = list_of_certs[11] || []
   res.json({ success: true, bilal: bilal_certs, britto: britto_certs, abhishek: abhishek_certs, devadath: devadath_certs, akash: akash_certs,adhil:adhil_certs,vaishnav:vaishnav_certs })
 })
 

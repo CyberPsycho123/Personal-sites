@@ -18,121 +18,37 @@ const Portfolio = ({ certificates, projects }) => {
   const [resume, setresume] = useState("")
   const [roledesc, setdesc] = useState("")
 
+
+  const person_names = ["BRITTO", "BILAL", "ABHISHEK", "DEVADATH", "AKASH", "ADHIL", "VAISHNAV"]
+
   const role_description = [
-    { name: 'BRITTO BINOY', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "" },
-    { name: 'MOHAMMED BILAL', resume: "", github: "https://github.com/CyberPsycho123", linked: "https://www.linkedin.com/in/mohammed-bilal-1b9776329/", role: "Aspiring CyberSecurity Engineer", roledesc: "I am an aspiring Cybersecurity Engineer specializing in Application Security, bringing a strong foundational background in Web Development.", email: "bilu02491@gmail.com", phone: "8089355690", location: "Perinthalmana,Kerala", about: "My name is Mohammed Bilal. I’m currently studying Cybersecurity and building practical skills in development. I work with MERN and Django for web applications, and React Native for mobile applications. My first career goal is to start as either a Software Engineer or an Application Security Engineer — ideally in a role where I can build, learn, and grow. Eventually, I want to move deeper into AppSec, especially mobile security, but I’m equally open to software engineering roles right now because both fields help me grow my technical foundation. I’m adaptable, I learn fast, and I’m focused on gaining hands-on experience.In terms of skills, I work with the MERN stack and Django for web development, and I use React Native for mobile app development. I have experience with databases like MongoDB and SQL, and I’ve deployed projects on platforms like Render and Vercel. I’m also learning Cybersecurity, which helps me understand how applications behave from a security perspective. For experience, I’ve built multiple personal projects to improve my skills — for example, web applications with authentication and data handling, and basic mobile applications with React Native. These projects helped me understand real workflows like frontend-backend communication, databases, and deploying applications. My focus right now is to gain industry experience as either a Software Engineer or an AppSec Engineer." },
-    { name: 'ABHISHEK TV', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "" },
-    { name: 'MS DEVADATHAN', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "" },
-    { name: 'AKASH BOBAN', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "" },
-    { name: 'ADHIL KB', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "" },
-    { name: 'VAISHNAV MANOJ', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "" }
+    { name: 'BRITTO BINOY', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'blue' },
+    { name: 'MOHAMMED BILAL', resume: "", github: "https://github.com/CyberPsycho123", linked: "https://www.linkedin.com/in/mohammed-bilal-1b9776329/", role: "Aspiring CyberSecurity Engineer", roledesc: "I am an aspiring Cybersecurity Engineer specializing in Application Security, bringing a strong foundational background in Web Development.", email: "bilu02491@gmail.com", phone: "8089355690", location: "Perinthalmana,Kerala", about: "My name is Mohammed Bilal. I’m currently studying Cybersecurity and building practical skills in development. I work with MERN and Django for web applications, and React Native for mobile applications. My first career goal is to start as either a Software Engineer or an Application Security Engineer — ideally in a role where I can build, learn, and grow. Eventually, I want to move deeper into AppSec, especially mobile security, but I’m equally open to software engineering roles right now because both fields help me grow my technical foundation. I’m adaptable, I learn fast, and I’m focused on gaining hands-on experience.In terms of skills, I work with the MERN stack and Django for web development, and I use React Native for mobile app development. I have experience with databases like MongoDB and SQL, and I’ve deployed projects on platforms like Render and Vercel. I’m also learning Cybersecurity, which helps me understand how applications behave from a security perspective. For experience, I’ve built multiple personal projects to improve my skills — for example, web applications with authentication and data handling, and basic mobile applications with React Native. These projects helped me understand real workflows like frontend-backend communication, databases, and deploying applications. My focus right now is to gain industry experience as either a Software Engineer or an AppSec Engineer.", color: 'blueviolet' },
+    { name: 'ABHISHEK TV', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'red' },
+    { name: 'MS DEVADATHAN', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'green' },
+    { name: 'AKASH BOBAN', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'chocolate' },
+    { name: 'ADHIL KB', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'brown' },
+    { name: 'VAISHNAV MANOJ', resume: "", github: "#", linked: "#", role: "Aspiring CyberSecurity Engineer", roledesc: "", email: "", phone: "", location: "", about: "", color: 'orange' }
   ]
 
   useEffect(() => {
-    if (person_name == "BRITTO") {
-      setname(role_description[0].name)
-      setrole(role_description[0].role)
-      setdesc(role_description[0].roledesc)
-      setlock(role_description[0].location)
-      setno(role_description[0].phone)
-      setmail(role_description[0].email)
-      setabout(role_description[0].about)
-      sethub(role_description[0].github)
-      setlink(role_description[0].linked)
-      setresume(role_description[0].resume)
-      setcolor("blue")
+
+    for (let i = 0; i < person_names.length; i++) {
+      if (person_name == "BRITTO") {
+        setname(role_description[i].name)
+        setrole(role_description[i].role)
+        setdesc(role_description[i].roledesc)
+        setlock(role_description[i].location)
+        setno(role_description[i].phone)
+        setmail(role_description[i].email)
+        setabout(role_description[i].about)
+        sethub(role_description[i].github)
+        setlink(role_description[i].linked)
+        setresume(role_description[i].resume)
+        setcolor(role_description[i].color)
+      }
     }
-    else if (person_name == "BILAL") {
-      setname(role_description[1].name)
-      setrole(role_description[1].role)
-      setdesc(role_description[1].roledesc)
-      setlock(role_description[1].location)
-      setno(role_description[1].phone)
-      setmail(role_description[1].email)
-      setabout(role_description[1].about)
-      sethub(role_description[1].github)
-      setlink(role_description[1].linked)
-      setresume(role_description[1].resume)
-      setcolor("blueviolet")
-    }
-    else if (person_name == "ABHISHEK") {
-      setname(role_description[2].name)
-      setrole(role_description[2].role)
-      setdesc(role_description[2].roledesc)
-      setlock(role_description[2].location)
-      setno(role_description[2].phone)
-      setmail(role_description[2].email)
-      setabout(role_description[2].about)
-      sethub(role_description[2].github)
-      setlink(role_description[2].linked)
-      setresume(role_description[2].resume)
-      setcolor("red")
-    }
-    else if (person_name == "DEVADATH") {
-      setname(role_description[3].name)
-      setrole(role_description[3].role)
-      setdesc(role_description[3].roledesc)
-      setlock(role_description[3].location)
-      setno(role_description[3].phone)
-      setmail(role_description[3].email)
-      setabout(role_description[3].about)
-      sethub(role_description[3].github)
-      setlink(role_description[3].linked)
-      setresume(role_description[3].resume)
-      setcolor("green")
-    }
-    else if (person_name == "AKASH") {
-      setname(role_description[4].name)
-      setrole(role_description[4].role)
-      setdesc(role_description[4].roledesc)
-      setlock(role_description[4].location)
-      setno(role_description[4].phone)
-      setmail(role_description[4].email)
-      setabout(role_description[4].about)
-      sethub(role_description[4].github)
-      setlink(role_description[4].linked)
-      setresume(role_description[4].resume)
-      setcolor("chocolate")
-    }
-    else if (person_name == "ADHIL") {
-      setname(role_description[5].name)
-      setrole(role_description[5].role)
-      setdesc(role_description[5].roledesc)
-      setlock(role_description[5].location)
-      setno(role_description[5].phone)
-      setmail(role_description[5].email)
-      setabout(role_description[5].about)
-      sethub(role_description[5].github)
-      setlink(role_description[5].linked)
-      setresume(role_description[5].resume)
-      setcolor("brown")
-    }
-    else if (person_name == "ADHIL") {
-      setname(role_description[5].name)
-      setrole(role_description[5].role)
-      setdesc(role_description[5].roledesc)
-      setlock(role_description[5].location)
-      setno(role_description[5].phone)
-      setmail(role_description[5].email)
-      setabout(role_description[5].about)
-      sethub(role_description[5].github)
-      setlink(role_description[5].linked)
-      setresume(role_description[5].resume)
-      setcolor("brown")
-    }
-    else if (person_name == "VAISHNAV") {
-      setname(role_description[6].name)
-      setrole(role_description[6].role)
-      setdesc(role_description[6].roledesc)
-      setlock(role_description[6].location)
-      setno(role_description[6].phone)
-      setmail(role_description[6].email)
-      setabout(role_description[6].about)
-      sethub(role_description[6].github)
-      setlink(role_description[6].linked)
-      setresume(role_description[6].resume)
-      setcolor("orange")
-    }
+
 
 
   }, [pathname])
