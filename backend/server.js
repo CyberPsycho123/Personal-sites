@@ -180,7 +180,7 @@ app.post('/readprojects', async (req, res) => {
   const devadath_projects = list_of_projects[3] || []
   const akash_projects = list_of_projects[4] || []
   const adhil_projects = list_of_projects[5] || []
-  const vaishnav_projects = list_of_certs[6] || []
+  const vaishnav_projects = list_of_projects[6] || []
   res.json({ success: true, bilal: bilal_projects, britto: britto_projects, abhishek: abhishek_projects, devadath: devadath_projects, akash: akash_projects,adhil:adhil_projects,vaishnav:vaishnav_projects })
 })
 
