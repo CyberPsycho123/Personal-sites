@@ -34,7 +34,7 @@ const Portfolio = ({ certificates, projects }) => {
   useEffect(() => {
 
     for (let i = 0; i < person_names.length; i++) {
-      if (person_name == "BRITTO") {
+      if (person_names[i] == person_name) {
         setname(role_description[i].name)
         setrole(role_description[i].role)
         setdesc(role_description[i].roledesc)
